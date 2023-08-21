@@ -8,7 +8,13 @@ db.init_app(app)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
+    name = "hello"
+    task_entry = Task(taskname=name)
     return render_template('index.html')
+
+@app.route('/task', methods=['GET', 'POST'])
+def task():
+    return render_template('task.html')
 
 
 
