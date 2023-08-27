@@ -15,71 +15,130 @@
 
 <body>
 <h1>Let's Create A Task</h1>
-<div class="mb-3">
-    <label for="name" class="form-label">Task Name</label>
-    <div class="input-group">
-<!--        <span class="input-group-text" id="basic-addon3">Task Name</span>-->
-        <input type="text" class="form-control" id="name" aria-label="Recipient's username" aria-describedby="basic-addon2">
-        <button class="btn btn-outline-secondary" type="button" id="submit1">Submit</button>
+<form class="row g-3">
+    <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Name</label>
+        <input type="text" class="form-control" id="inputEmail4">
     </div>
-</div>
-
-<div class="mb-3">
-    <label for="description" class="form-label">Description</label>
-    <div class="input-group">
-<!--        <span class="input-group-text" id="desc">Description</span>-->
-        <input type="text" class="form-control" id=description aria-label="Recipient's username" aria-describedby="basic-addon2">
-        <button class="btn btn-outline-secondary" type="button" id="submit2">Submit</button>
+    <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">Password</label>
+        <input type="password" class="form-control" id="inputPassword4">
     </div>
-</div>
-
-
-<div class="mb-3">
-    <label for="name" class="form-label">How long will this task take?</label>
-    <div class="input-group">
-<!--        <span class="input-group-text" id="basic-addon4">How long will this task take?</span>-->
-        <input type="text" class="form-control" id="duration" aria-label="Recipient's username" aria-describedby="basic-addon2">
-        <button class="btn btn-outline-secondary" type="button" id="submit3">Submit</button>
+    <div class="col-12">
+        <label for="inputAddress" class="form-label">Address</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
     </div>
-</div>
-
-<div class="mb-3">
-    <label for="name" class="form-label">How many times a day will you do this task?</label>
-    <div class="input-group">
-        <select class="form-select" id="inputGroupSelect01">
+    <div class="col-12">
+        <label for="inputAddress2" class="form-label">Address 2</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+    </div>
+    <div class="col-md-6">
+        <label for="inputCity" class="form-label">City</label>
+        <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="col-md-4">
+        <label for="inputState" class="form-label">State</label>
+        <select id="inputState" class="form-select">
             <option selected>Choose...</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10+</option>
+            <option>...</option>
         </select>
-        <button class="btn btn-outline-secondary" type="button" id="submit4">Submit</button>
-<!--        <input type="text" class="form-control" id="count" aria-label="Recipient's username" aria-describedby="basic-addon2">-->
-<!--        <button class="btn btn-outline-secondary" type="button" id="submit4">Submit</button>-->
     </div>
-</div>
-
-
-<div class="mb-3">
-    <label for="name" class="form-label"> At what times(s) would you like to be reminded?</label>
-    <div class="input-group">
-        <input type="text" class="form-control" id="timeperiod" placeholder="Enter Text Here" aria-label="Recipient's username" aria-describedby="basic-addon2">
-        <button class="btn btn-outline-secondary" type="button" id="submit5">Submit</button>
+    <div class="col-md-2">
+        <label for="inputZip" class="form-label">Zip</label>
+        <input type="text" class="form-control" id="inputZip">
     </div>
-</div>
-
-
+    <div class="col-12">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+                Check me out
+            </label>
+        </div>
+    </div>
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Sign in</button>
+    </div>
+</form>
 </body>
 </html>
+<!--<div class="mb-3">-->
+<!--    <label for="name" class="form-label">Task Name</label>-->
+<!--    <div class="input-group">-->
+<!--&lt;!&ndash;        <span class="input-group-text" id="basic-addon3">Task Name</span>&ndash;&gt;-->
+<!--        <input type="text" class="form-control" id="name" aria-label="Recipient's username" aria-describedby="basic-addon2">-->
+<!--&lt;!&ndash;        <button class="btn btn-outline-secondary" type="button" id="submit1">Submit</button>&ndash;&gt;-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<div class="mb-3">-->
+<!--    <label for="description" class="form-label">Description</label>-->
+<!--    <div class="input-group">-->
+<!--&lt;!&ndash;        <span class="input-group-text" id="desc">Description</span>&ndash;&gt;-->
+<!--        <input type="text" class="form-control" id=description aria-label="Recipient's username" aria-describedby="basic-addon2">-->
+<!--&lt;!&ndash;        <button class="btn btn-outline-secondary" type="button" id="submit2">Submit</button>&ndash;&gt;-->
+<!--    </div>-->
+<!--</div>-->
 
 
-<!--{% extends 'base.html' %} {% block content %}-->
+<!--<div class="mb-3">-->
+<!--    <label for="name" class="form-label">How long will this task take?</label>-->
+<!--    <div class="input-group">-->
+<!--&lt;!&ndash;        <span class="input-group-text" id="basic-addon4">How long will this task take?</span>&ndash;&gt;-->
+<!--        <input type="text" class="form-control" id="duration" aria-label="Recipient's username" aria-describedby="basic-addon2">-->
+<!--&lt;!&ndash;        <button class="btn btn-outline-secondary" type="button" id="submit3">Submit</button>&ndash;&gt;-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<div class="mb-3">-->
+<!--    <label for="name" class="form-label">How many times a day will you do this task?</label>-->
+<!--    <div class="input-group">-->
+<!--        <select class="form-select" id="inputGroupSelect01">-->
+<!--            <option selected>Choose...</option>-->
+<!--            <option value="1">1</option>-->
+<!--            <option value="2">2</option>-->
+<!--            <option value="3">3</option>-->
+<!--            <option value="4">4</option>-->
+<!--            <option value="5">5</option>-->
+<!--            <option value="6">6</option>-->
+<!--            <option value="7">7</option>-->
+<!--            <option value="8">8</option>-->
+<!--            <option value="9">9</option>-->
+<!--            <option value="10">10+</option>-->
+<!--        </select>-->
+<!--&lt;!&ndash;        <button class="btn btn-outline-secondary" type="button" id="submit4">Submit</button>&ndash;&gt;-->
+<!--&lt;!&ndash;        <input type="text" class="form-control" id="count" aria-label="Recipient's username" aria-describedby="basic-addon2">&ndash;&gt;-->
+<!--&lt;!&ndash;        <button class="btn btn-outline-secondary" type="button" id="submit4">Submit</button>&ndash;&gt;-->
+<!--    </div>-->
+<!--</div>-->
+
+
+<!--<div class="mb-3">-->
+<!--    <label for="name" class="form-label"> At what times(s) would you like to be reminded?</label>-->
+<!--    <div class="input-group">-->
+<!--        <input type="text" class="form-control" id="timeperiod" placeholder="Enter Text Here" aria-label="Recipient's username" aria-describedby="basic-addon2">-->
+<!--&lt;!&ndash;        <button class="btn btn-outline-secondary" type="button" id="submit5">Submit</button>&ndash;&gt;-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<div class="d-grid gap-2 col-3 mx-auto">-->
+<!--    <button type="button" class="btn btn-primary" data-bs-toggle="button" aria-pressed="true">Submit</button>-->
+<!--</div>-->
+
+<!--<form action="/form/submit" method="post">-->
+<!--    <input type="date" name="date" value="2018-01-01" min="2017-01-01" max="2019-01-01">-->
+<!--</form>-->
+
+
+
+
+{% extends 'base.html' %} {% block content %}
+<!--                                               -->
+
+
+
+
+
+
 
 
 <!--<p>Task Name</p>-->
